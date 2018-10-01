@@ -4,7 +4,7 @@ public abstract class Employee {
 
     private String name;
     private String niNumber;
-    private double salary;
+    protected double salary;
 
     public Employee(String name, String niNumber, double salary) {
         this.name = name;
@@ -13,15 +13,15 @@ public abstract class Employee {
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public String getNiNumber() {
-        return niNumber;
+        return this.niNumber;
     }
 
     public double getSalary() {
-        return salary;
+        return this.salary;
     }
 
     public void raiseSalary(double raise) {

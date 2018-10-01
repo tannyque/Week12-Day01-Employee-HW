@@ -50,4 +50,9 @@ public class ManagerTest {
         assertEquals(35000.00, manager.getSalary(), 0.01);
     }
 
+    @Test
+    public void cannotSetNameToNull() {
+        manager.setName(null);
+        assertEquals("Elon Musk", manager.getName());
+    }
 }
